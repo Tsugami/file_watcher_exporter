@@ -1,4 +1,4 @@
-# Project ftp_exporter
+# Project file_watcher_exporter
 
 One Paragraph of project description goes here
 

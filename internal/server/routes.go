@@ -4,12 +4,15 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", s.HelloWorldHandler)
+	mux.Handle("/metrics", promhttp.Handler())
 
 	return mux
 }

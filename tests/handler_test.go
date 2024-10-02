@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"ftp_exporter/internal/server"
+	"file_watcher_exporter/internal/server"
 	"io"
 	"net/http"
 	"net/http/httptest"

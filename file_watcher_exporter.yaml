@@ -1,0 +1,8 @@
+dir: /tmp/coisas
+exclude:
+  - "/tmp/coisas/*/success"
+include:
+  - "/tmp/coisas/*"
+  - "/tmp/coisas/*/*"
+  - "/tmp/coisas/*/erro"
+  - "/tmp/coisas/*/erro/*"
